@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Problem1_JSON"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="IMBD Movie Stats" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Button x:Name="btnGetStats" Content="Get Movie Stats" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Margin="324,361,0,0" Height="48"/>
         <Label x:Name="lblIMDBscore" Content="Movie with the highest IMDB score:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,86,0,0" Height="33" Width="219"/>
         <Label x:Name="lblDirector" Content="Movies with Anthony Russo as director&#x9;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,183,0,0" Height="35" Width="237"/>
@@ -16,7 +22,7 @@
         <Label x:Name="lblMovieGenre" Content="Movie Genres" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="503,38,0,0" Height="28" Width="126"/>
         <Label x:Name="lblNumVotedUsers" Content="Movies with Voted Users of 350K or more&#xD;&#xA;" HorizontalAlignment="Left" Margin="503,222,0,0" VerticalAlignment="Top" Height="46" Width="211"/>
         <Label x:Name="lblTitle" Content="IMDB Movie Stats" HorizontalAlignment="Left" Margin="30,32,0,0" VerticalAlignment="Top" Height="49" Width="365" FontSize="18" FontWeight="Bold"/>
-        <TextBox x:Name="txtIMBDscore" HorizontalAlignment="Left" Height="23" Margin="30,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="txtIMBDscore" HorizontalAlignment="Left" Height="23" Margin="30,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="275" IsReadOnlyCaretVisible="True"/>
         <TextBox x:Name="txtDirector" HorizontalAlignment="Left" Height="23" Margin="30,226,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="275"/>
         <TextBox x:Name="txtActor1" HorizontalAlignment="Left" Height="23" Margin="30,303,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="275"/>
 
