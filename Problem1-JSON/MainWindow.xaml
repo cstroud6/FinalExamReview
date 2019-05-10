@@ -7,15 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Margin="148,325,0,0" Height="48"/>
+        <Button x:Name="btnGetStats" Content="Get Movie Stats" HorizontalAlignment="Left" VerticalAlignment="Top" Width="147" Margin="324,361,0,0" Height="48"/>
         <Label x:Name="lblIMDBscore" Content="Movie with the highest IMDB score:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,86,0,0" Height="33" Width="219"/>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,186,0,0" Height="35" Width="219"/>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,267,0,0" Height="31" Width="219"/>
-        <ListBox HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="177" Margin="566,86,0,0"/>
-        <ListBox Margin="566,273,49,46"/>
-        <Label x:Name="lblMovieGenre" Content="Movie Genres" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="566,32,0,0" Height="28" Width="126"/>
-        <Label x:Name="lblNumVotedUsers" Content="Movies with Voted Users of 350K or more&#xD;&#xA;" HorizontalAlignment="Left" Margin="566,222,0,0" VerticalAlignment="Top" Height="46" Width="211"/>
+        <Label x:Name="lblDirector" Content="Movies with Anthony Russo as director&#x9;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,183,0,0" Height="35" Width="237"/>
+        <Label x:Name="lblActor1" Content="Movies with Robert Downey Jr. as Actor1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,267,0,0" Height="31" Width="237"/>
+        <ListBox x:Name="lstMovieGenre" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="211" Margin="503,86,0,0"/>
+        <ListBox x:Name="lstVotedUsers" Margin="503,273,78,46"/>
+        <Label x:Name="lblMovieGenre" Content="Movie Genres" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="503,38,0,0" Height="28" Width="126"/>
+        <Label x:Name="lblNumVotedUsers" Content="Movies with Voted Users of 350K or more&#xD;&#xA;" HorizontalAlignment="Left" Margin="503,222,0,0" VerticalAlignment="Top" Height="46" Width="211"/>
         <Label x:Name="lblTitle" Content="IMDB Movie Stats" HorizontalAlignment="Left" Margin="30,32,0,0" VerticalAlignment="Top" Height="49" Width="365" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="txtIMBDscore" HorizontalAlignment="Left" Height="23" Margin="30,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="txtDirector" HorizontalAlignment="Left" Height="23" Margin="30,226,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="txtActor1" HorizontalAlignment="Left" Height="23" Margin="30,303,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="275"/>
 
     </Grid>
 </Window>
